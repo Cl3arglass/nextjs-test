@@ -1,10 +1,15 @@
 module.exports = {
-    async redirects() {
+    async rewrites() {
       return [
         {
-          source: '/about',
-          destination: '/',
-          permanent: true,
+          source: '/:path*',
+          has: [
+              {
+                  type: 'host',
+                  value: '(?<hostname>.+)'
+              },
+          ],
+          destination: '/:path*?x-host=:hostname',
         },
       ]
     },
