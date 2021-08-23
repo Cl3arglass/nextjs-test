@@ -1,7 +1,7 @@
 {"rewrites": [
   {
   "source": "/:match*",
-  "destination": "https://nextjs-test-rust-xi.vercel.app/:match*"
+  "destination": "https://nextjs-test-cl3arglass.vercel.app/:match*"
   }
   ]
 }
