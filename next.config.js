@@ -1,9 +1,13 @@
 module.exports = {
   async rewrites() {
-    return [
+    afterFiles: [
+      // These rewrites are checked after headers/redirects
+      // and before all files including _next/public files which
+      // allows overriding page files
       {
-        source: '/about',
-        destination,
+        source: '/',
+        destination: '/about',
+        has: [{ type: 'query', key }],
       },
     ]
   },
