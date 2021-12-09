@@ -1,10 +1,12 @@
 module.exports = {
     async rewrites() {
-      return [
+      return {
+            beforeFiles: [
         {
           source: '/dogs',
           destination: 'https://montidogs-poc.vercel.app',
         },
-      ]
+      ],
+     }
     },
   }
