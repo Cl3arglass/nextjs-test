@@ -26,6 +26,10 @@ export default function Home({ allPostsData }) {
           (This is a sample website - you can build a site on this{' '}
           <a href="https://nextjs.org/learn">Next.js tutorial</a>.)
         </p>
+        <p dangerouslySetInnerHTML={{
+            __html: `<!-- Version: ${process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA} -->`,
+          }}>
+        </p>
       </section>
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
