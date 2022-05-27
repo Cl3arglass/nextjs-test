@@ -19,12 +19,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Holden. I'm a software developer and writer (Poetry). You can contact me on{' '} 
+        <p>Hello, I'm Holden. I'm a software developer and surfer. You can contact me on{' '} 
           <a href="https://www.linkedin.com/in/holden-altaffer-609033ab/">Linkedin</a>.
         </p>
         <p>
           (This is a sample website - you can build a site on this{' '}
           <a href="https://nextjs.org/learn">Next.js tutorial</a>.)
+        </p>
+        <p dangerouslySetInnerHTML={{
+            __html: `<!-- Version: ${process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA} -->`,
+          }}>
         </p>
       </section>
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
