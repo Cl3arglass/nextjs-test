@@ -9,7 +9,7 @@
                   has: [
                       {
                           type: 'host',
-                          value: 'about.acme.com',
+                          value: 'about.holdenaltaffer.com',
                       },
                   ],
                   destination: '/posts/:path*',
