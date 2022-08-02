@@ -2,8 +2,8 @@ export default function handler(req) {
     return new Response(null, {
       status: 301,
       headers: {
-        Location: 'https://example.com/',
-        'x-location': 'https://example.com/',
+        'location': 'https://montidogs-poc.vercel.app/',
+        'x-location': 'https://montidogs-poc.vercel.app/',
       },
     });
   }
