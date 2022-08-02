@@ -1,7 +1,7 @@
   module.exports = {
     rewrites() {
       return {
-          beforeFiles: [
+          afterFiles: [
               // if the host is `app.acme.com`,
               // this rewrite will be applied
               {
