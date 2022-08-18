@@ -14,6 +14,7 @@ export default function FirstPost() {
           <a>Back to home</a>
         </Link>
       </h2>
+      <h1>The value of NODE_ENV is: {process.env.NODE_ENV}</h1>
     </Layout>
   )
 }
