@@ -15,6 +15,7 @@ export default function FirstPost() {
         </Link>
       </h2>
       <h1>The value of NODE_ENV is: {process.env.NODE_ENV}</h1>
+      <h1>The value of TEST_URL is: {process.env.TEST_URL}</h1>
     </Layout>
   )
 }
