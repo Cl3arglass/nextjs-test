@@ -1,3 +1,3 @@
 {
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./pages/"
-}
+  "ignoreCommand": "if [[ '$VERCEL_GIT_COMMIT_REF' != 'master' && '$VERCEL_GIT_COMMIT_REF' != 'production' ]]; then git diff --quiet HEAD^ HEAD ./pages/; else exit 1; fi"
+} 
