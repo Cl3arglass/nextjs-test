@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Holden. I'm a software developer and writer (Poetry). You can contact me on{' '} 
+        <p>Hello, I'm Holden. I'm a software developer and writer (Poetry). You can find me on{' '} 
           <a href="https://www.linkedin.com/in/holden-altaffer-609033ab/">Linkedin</a>.
         </p>
         <p>
