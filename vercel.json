@@ -1,8 +1,3 @@
 {
-    "functions": {
-      "api/**/*": {
-        "memory": 960
-      }
-    }
-  }
-  
+  "ignoreCommand": "bash -c 'if [ $(git rev-parse --abbrev-ref HEAD) != 'master' ] && [ $(git rev-parse --abbrev-ref HEAD) != 'production' ]; then git diff HEAD^ HEAD --quiet . ../common; else exit 1; fi;'"
+}
