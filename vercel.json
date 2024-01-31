@@ -1,0 +1,7 @@
+{
+    "git": {
+      "deploymentEnabled": {
+        "BIL_2378_introduce_create_policy_initialization_component_test_super_long_branch_name_to_throw_an_error": false
+      }
+    }
+  }
