@@ -1,7 +1,17 @@
 {
-    "functions": {
-    "pages/api/*.js": {
-    "maxDuration": 47
+    "headers": [
+    {
+    "source": "/(.*)",
+    "headers": [
+    {
+    "key": "x-vercel-id",
+    "value": "bruh"
+    },
+    {
+    "key": "hello-world",
+    "value": "kraaaa"
     }
+    ]
     }
-}
+    ]
+    }
