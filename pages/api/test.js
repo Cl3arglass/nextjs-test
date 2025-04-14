@@ -8,6 +8,3 @@ export default function handler(req) {
     });
   }
   
-  export const config = {
-    runtime: 'experimental-edge',
-  };
